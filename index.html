@@ -4,19 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>SC4</title>
-  <link rel="stylesheet" href="./styles/reset.css">
-  <link rel="stylesheet" href="./styles/index.scss">
+  <link rel="stylesheet" href="reset.b8b42624.css">
+  <link rel="stylesheet" href="styles.996ff8d2.css">
   <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css">
 </head>
 
 <body>
   <div class="main">
-    <div class="nav">
-      <a href="#"><i class="feather icon-mail"></i></a>
-      <div class="home-button">
-        <a href="#"><img src="./asset/home.svg"></a>
-      </div>
-      <a href="javascript:userInfo();"><i class="feather icon-user"></i></a>
+    <div class="nav"> <a href="#"><i class="feather icon-mail"></i></a>
+      <div class="home-button"> <a href="#"><img src="home.47db1a76.svg"></a> </div> <a href="javascript:userInfo();"><i class="feather icon-user"></i></a>
     </div>
     <h1 class="greeter" id="hello">Hello {{ username }},<br> it's {{ day }}.</h1>
     <div class="grid">
@@ -26,38 +22,29 @@
       <div class="gridbox featured">
         <h1 class="gridbox-header">Featured</h1>
         <div class="project-row" id="featured">
-          <div v-for="project in featured" :alt="project[1]" class="project-thumb">
-            <a :href="'javascript: selectedLink = ' + project[2] + '; openProject();'"><img :src="project[0]" class="project-img">
+          <div v-for="project in featured" :alt="project[1]" class="project-thumb"> <a :href="'javascript: selectedLink = ' + project[2] + '; openProject();'"><img :src="project[0]" class="project-img">
               <div class="overlay">{{ project[1][0] }}</div>
-            </a>
-          </div>
-
+            </a> </div>
         </div>
       </div>
       <div class="gridbox top-loved">
         <h1 class="gridbox-header">Top Loved</h1>
         <div class="project-row" id="toploved">
-          <div v-for="project in toploved" :alt="project[1]" class="project-thumb">
-            <a :href="'javascript: selectedLink = ' + project[2] + '; openProject();'"><img :src="project[0]" class="project-img">
+          <div v-for="project in toploved" :alt="project[1]" class="project-thumb"> <a :href="'javascript: selectedLink = ' + project[2] + '; openProject();'"><img :src="project[0]" class="project-img">
               <div class="overlay">{{ project[1][0] }}</div>
-            </a>
-          </div>
+            </a> </div>
         </div>
       </div>
       <div class="gridbox yours">
         <h1 class="gridbox-header"></h1>
-        <div class="project-row" id="forYou">
-          <img src="./asset/cantaccess.svg" class="offline-img">
-        </div>
+        <div class="project-row" id="forYou"> <img src="cantaccess.27dbbb9f.svg" class="offline-img"> </div>
       </div>
     </div>
     <div class="user-shade" id="userShade">
-      <h1 class=""></h1>
+      <h1></h1>
     </div>
   </div>
-
-  <script src="./scripts/index.js" charset="utf-8"></script>
-
+  <script src="scripts.e3535b5c.js" charset="utf-8"></script>
 </body>
 
 </html>
